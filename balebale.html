@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Balle Balle</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background:linear-gradient(45deg,#ff9933,#ff0066,#6600ff);
+    font-family:Arial, sans-serif;
+    color:white;
+    text-align:center;
+}
+
+h1{
+    font-size:60px;
+    animation: bounce 1s infinite alternate;
+}
+
+button{
+    padding:15px 30px;
+    font-size:20px;
+    border:none;
+    border-radius:10px;
+    background:yellow;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+@keyframes bounce{
+    from{transform:translateY(0);}
+    to{transform:translateY(-20px);}
+}
+</style>
+</head>
+
+<body>
+
+<h1 id="text">Balle Balle! 🕺</h1>
+
+<button onclick="celebrate()">Click for More Balle!</button>
+
+<script>
+function celebrate(){
+    document.getElementById("text").innerHTML = "Oye Hoyeee! Balle Balle!!! 🕺💃";
+    alert("Punjabi Celebration Time! 🎉");
+}
+</script>
+
+</body>
+</html>
